@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #1f2a44, #090b14);
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+button {
+  border: none;
+  border-radius: 20px;
+  transition: transform 0.1s ease;
+}
+
+button:active {
+  transform: scale(0.92);
+}
+
+.damage-number {
+  animation: floatUp 0.5s ease-out;
+}
+
+@keyframes floatUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+}
